@@ -2,9 +2,11 @@
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 <module name="Checker">
   <!-- Configurazione per l'intestazione -->
-  <module name="RegexpHeader">
-    <property name="headerFile" value="${checkstyle.header.file}" />
-  </module>
+  <module name="Header">
+    <property name="header" value="////////////////////////////////////////////////////////////////////&#10;// Oussama Mahdi     2081617&#10;// Alberto Canavese  2076423&#10;////////////////////////////////////////////////////////////////////"/>
+    <property name="fileExtensions" value="java"/> <!-- Opzionale: specifica le estensioni dei file su cui applicare il controllo -->
+</module>
+
   <!-- Configurazione per la lunghezza massima del file -->
   <module name="FileLength">
     <property name="max" value="1500" />
