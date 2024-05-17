@@ -1,2 +1,3 @@
  # ASSIGNMENT 2 MTSS #
  [![Code coverage with Jacoco](https://github.com/m4hd1-exe/assignment2-mtss/actions/workflows/codecoverage.yml/badge.svg)](https://github.com/m4hd1-exe/assignment2-mtss/actions/workflows/codecoverage.yml)
+ [![Java CI with Maven](https://github.com/m4hd1-exe/assignment2-mtss/actions/workflows/maven.yml/badge.svg)](https://github.com/m4hd1-exe/assignment2-mtss/actions/workflows/maven.yml)
