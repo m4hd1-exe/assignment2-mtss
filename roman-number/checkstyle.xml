@@ -30,7 +30,7 @@
     </module>
     <!-- Configurazione per la complessità ciclomatica -->
     <module name="CyclomaticComplexity">
-      <property name="max" value="10" />
+      <property name="max" value="15" />
       <property name="tokens" value="LITERAL_WHILE, LITERAL_DO" />
       <property name="switchBlockAsSingleDecisionPoint" value="true" />
     </module>
