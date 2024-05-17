@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+  <!-- Configurazione per l'intestazione -->
+  <module name="RegexpHeader">
+        <property name="headerFile" value="roman-number/LICENSE.txt"/>
+  </module>
+
+  <!-- Configurazione per la lunghezza massima del file -->
+  <module name="FileLength">
+    <property name="max" value="1500" />
+  </module>
+  <!-- Configurazione per la lunghezza massima della riga -->
+  <module name="LineLength">
+    <property name="max" value="200" />
+    <property name="ignorePattern" value="^ *\* *[^ ]+$" />
+    <property name="fileExtensions" value="java" />
+    <property name="fileExtensions" value="xml, properties" />
+  </module>
+  <!-- Configurazione per i caratteri di tabulazione nel file -->
+  <module name="FileTabCharacter">
+    <property name="eachLine" value="true" />
+    <property name="fileExtensions" value="java, xml" />
+  </module>
+
+  <module name="TreeWalker">
+    <!-- Configurazione per la complessità delle espressioni booleane -->
+    <module name="BooleanExpressionComplexity">
+      <property name="max" value="5" />
+    </module>
+    <!-- Configurazione per la complessità ciclomatica -->
+    <module name="CyclomaticComplexity">
+      <property name="max" value="15" />
+      <property name="tokens" value="LITERAL_WHILE, LITERAL_DO" />
+      <property name="switchBlockAsSingleDecisionPoint" value="true" />
+    </module>
+    <!-- Configurazione per la lunghezza massima dei metodi -->
+    <module name="MethodLength">
+      <property name="tokens" value="METHOD_DEF" />
+      <property name="max" value="200" />
+      <property name="countEmpty" value="false" />
+    </module>
+    <!-- Configurazione per i blocchi catch vuoti -->
+    <module name="EmptyCatchBlock">
+      <property name="exceptionVariableName" value="expected|ignore" />
+      <property name="commentFormat" value="This is expected" />
+      <property name="exceptionVariableName" value="myException" />
+    </module>
+    <!-- Configurazione per evitare gli import con * -->
+    <module name="AvoidStarImport">
+      <property name="excludes" value="java.io,java.net,java.lang.Math" />
+      <property name="allowStaticMemberImports" value="true" />
+    </module>
+    <!-- Configurazione per gli import illegali -->
+    <module name="IllegalImport">
+      <property name="illegalPkgs" value="java.io, java.sql" />
+      <property name="regexp" value="true" />
+    </module>
+    <!-- Configurazione per l'aggiunta delle parentesi nei blocchi if e else -->
+    <module name="NeedBraces">
+      <property name="tokens" value="LITERAL_IF, LITERAL_ELSE" />
+    </module>
+  </module>
+</module>
