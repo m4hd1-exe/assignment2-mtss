@@ -32,7 +32,14 @@
       <artifactId>mockito-core</artifactId>
       <version>5.2.0</version>
     </dependency>
+    <!-- Dipendenza per Coveralls -->
+    <dependency>
+      <groupId>org.eluder.coveralls</groupId>
+      <artifactId>coveralls-maven-plugin</artifactId>
+      <version>4.3.0</version>
+    </dependency>
   </dependencies>
+
 
   <!-- Configurazione del processo di build -->
   <build>
